@@ -7,6 +7,7 @@ const Foot = styled.footer`
     padding-bottom: 25px;
     color: #9f9f9f;
     margin-top: 100px;
+    font-family: 'Lato', sans-serif;
 
     a {
         text-decoration: none;
