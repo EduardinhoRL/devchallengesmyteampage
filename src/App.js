@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
+import Cards from './components/Cards'
+import Footer from './components/Footer'
+
+import styled from 'styled-components'
+
+const Container = styled.div` 
+  width: 100%;
+  max-width: 1000px;
+  margin: 80px auto 0 auto; 
+  display: grid;  
+
+  @media only screen and (max-width: 1100px) {
+    padding-left: 20px;
+  }
+
+  @media only screen and (max-width: 750px) {
+    margin: 0 auto; 
+}
+
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+
+      <Header />
+      <Cards />
+      <Footer />
+
+    </Container>
   );
 }
 
